@@ -26,7 +26,11 @@ Commit
 ======
 git commit -m "Kommentar"
 git log 		=> zeigt alle Commits an
+
+Commit bearbeiten
+================
 git commit --amend -m "newMessage" => ändert das Kommentar des letzten Commits, für den Fall, dass dieses falsch war.
+git commit --amend	=> falls im Commit was fehlt! Achtung Datei muss im Stage liegen !!!
 
 Pushing Commits
 ===============

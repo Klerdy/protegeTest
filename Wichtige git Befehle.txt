@@ -18,6 +18,10 @@ git add -A 		=> alles in den Stage schreiben
 git reset test.py	=> lösche test.py aus Stage
 git reset 		=> löscht alles aus dem Stage
 
+Modifizierung einer Datei rückgängig machen
+=======================================================
+git checkout dieDatei
+
 Commit
 ======
 git commit -m "Kommentar"

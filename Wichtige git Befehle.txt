@@ -1,0 +1,47 @@
+Einstellungen
+=============
+git config --global user.name "Norman"
+git config --global user.email "Norman_Nusse@gmx.de"
+
+Lokales Repo erstellen
+======================
+mkdir example
+cd example
+
+git init		=> erzeugt lokales Repo
+git clone		=> kopiert Remote Repo
+
+Dateien in Stage überführen/löschen und Status abfragen
+=======================================================
+git status 
+git add -A 		=> alles in den Stage schreiben
+git reset test.py	=> lösche test.py aus Stage
+git reset 		=> löscht alles aus dem Stage
+
+Commit
+======
+git commit -m "Kommentar"
+git log 		=> zeigt alle Commits an
+
+Pushing Commits
+===============
+Make Commit
+git diff
+git status
+git add -A
+git commit -m "Modified multiply function"
+
+Push
+git pull origin master
+git push origin master
+
+Push to Remote with new Branch
+git push -u origin newBranch
+
+Befehle für Remote Repo
+=======================
+git remote -v		=> zeigt die Repos an (lokal und Remote falls vorhanden) 
+git branch -a		=> zeigt existierende Branches (remote und lokal)
+git branch		=> zeigt lokale Branches und welcher gerade aktiv ist
+git checkout branch	=> wechselt den lokalen Branch
+

@@ -1,0 +1,14 @@
+Typischer Workflow
+==================
+
+= Create A Branch For Desired Feature 
+git branch calc-divide 
+git checkout calc-divide
+
+= Commit to Local Repo
+git add -A
+git commit -m "Comment"
+
+= After Commit Push Branch to Remote
+git push -u origin newBranch
+git branch -a

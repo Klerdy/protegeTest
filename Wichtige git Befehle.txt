@@ -26,6 +26,7 @@ Commit
 ======
 git commit -m "Kommentar"
 git log 		=> zeigt alle Commits an
+git commit --amend -m "newMessage" => ändert das Kommentar des letzten Commits, für den Fall, dass dieses falsch war.
 
 Pushing Commits
 ===============

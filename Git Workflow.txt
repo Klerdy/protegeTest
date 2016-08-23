@@ -12,3 +12,10 @@ git commit -m "Comment"
 = After Commit Push Branch to Remote
 git push -u origin newBranch
 git branch -a
+
+= Merge a Branch, after all Tests are good
+git checkout master
+git pull origin master
+git branch --merged
+git merge branchToMerge
+git push origin master

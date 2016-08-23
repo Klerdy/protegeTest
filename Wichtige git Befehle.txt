@@ -32,6 +32,26 @@ Commit bearbeiten
 git commit --amend -m "newMessage" => ändert das Kommentar des letzten Commits, für den Fall, dass dieses falsch war.
 git commit --amend	=> falls im Commit was fehlt! Achtung Datei muss im Stage liegen !!!
 
+Commit auf anderen Branch verschieben
+=====================================
+git checkout OTHERBRANCH
+git cherry-pick BranchHASH
+
+Commits löschen
+= soft			=> setzt Commit auf angegebenen Hash zurück, speichert den Rest aber im Stage ab.
+  git reset --soft ResetToHash
+= mixed			=> setzt Commit auf angegebenen Hash zurück, speichert den Rest ins WorkingDirectory
+  git reset ResetToHash
+= hard			=> setzt Commit auf angegebenen Hash zurück und löscht die Änderungen, untracked Files sind aber noch da
+  git reset --hard ResetToHash
+
+bei einer unbeabsichtigten Löschung kann noch mit reflog der Vorgang rückgängig gemacht werden.
+= git reflog
+= git checkout HASHWERT
+
+Löschen von untracked Files 
+= git clean -df
+ 
 Pushing Commits
 ===============
 Make Commit
